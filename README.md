@@ -14,7 +14,7 @@
 
 ## 🎨 Explorar las Plantillas
 
-Demuestra brechas de seguridad mediante interfaces visuales de alto impacto. Este repositorio recopila diseños minimalistas, efectos CRT de televisión, animaciones glitch en JavaScript y mensajes directos orientados a la ciberresponsabilidad para que los usuarios y administradores reconozcan el alcance de un defacement real.
+Demuestra brechas de seguridad mediante interfaces visuales de alto impacto. Este repositorio recopila diseños minimalistas, efectos de televisión, animaciones y mensajes directos orientados a la ciberresponsabilidad para que los usuarios y administradores reconozcan el alcance de un defacement real.
 
 ## 📋 Tabla de Contenidos
 
@@ -32,8 +32,8 @@ Este repositorio funciona como un escaparate técnico de interfaces utilizadas e
 
 ## ⚡ Características
 
-- **Diseño Dark:** Estética de seguridad ofensiva basada en negro, blanco y acentos rojos.
-- **Efectos Dinámicos:** Scripts de estática de televisión (Canvas), scanlines CRT y decodificación de texto en tiempo real.
+- **Diseño Dark:** Estética de seguridad ofensiva basada en negro, blanco y acentos visuales impactantes.
+- **Efectos Dinámicos:** Scripts de estática de televisión, scanlines y decodificación de texto en tiempo real.
 - **Totalmente Responsive:** Adaptable a cualquier resolución de pantalla.
 - **Mensajería Clara:** Enfoque orientado a advertir sobre fallos de seguridad y proteger a los usuarios antes de que actores malintencionados exploten las brechas.
 
@@ -48,10 +48,11 @@ El único propósito de este material es **educativo, demostrativo y de concient
 
 | Archivo | Estilo / Descripción |
 | :--- | :--- |
-| `deface1.html` | Estética CRT minimalista con efectos de glitch y tipografía de máquina de escribir. |
-| `deface2.html` | Estilo sobrio y directo con detalles visuales oscuros y tipografía gótica sutil. |
-| `deface3.html` | Manifiesto de fondo denso con capas oscuras y tipografía clásica en bloque. |
-| `deface4.html` | Pantalla de estática pura en blanco y negro con decodificación de texto dinámica. |
+| `deface1.html` | Defacement con Efecto de Escritura[cite: 5]. |
+| `deface2.html` | Defacement Tipo Anonymous[cite: 5]. |
+| `deface3.html` | Defacement Tipo Satánico[cite: 5]. |
+| `deface4.html` | Defacement Creepy[cite: 5]. |
+| `deface5.html` | Defacement con Efecto Escritura, televisión glitch y letras de fondo[cite: 5]. |
 
 ## 🚀 Uso y Despliegue
 
