@@ -40,19 +40,19 @@ Este repositorio funciona como un escaparate técnico de interfaces utilizadas e
 ## ⚖️ Propósito Ético (White Hat)
 
 El único propósito de este material es **educativo, demostrativo y de concientización defensiva**. 
-* Ningún sistema es 100% seguro.
-* Demostrar un defacement real ayuda a ilustrar por qué es indispensable corregir vulnerabilidades a tiempo.
-* Se desaprueba totalmente el uso malintencionado o el acceso no autorizado a sistemas ajenos.
+- Ningún sistema es 100% seguro.
+- Demostrar un defacement real ayuda a ilustrar por qué es indispensable corregir vulnerabilidades a tiempo.
+- Se desaprueba totalmente el uso malintencionado o el acceso no autorizado a sistemas ajenos.
 
 ## 📂 Lista de Templates
 
 | Archivo | Estilo / Descripción |
 | :--- | :--- |
-| `deface1.html` | Defacement con Efecto de Escritura[cite: 5]. |
-| `deface2.html` | Defacement Tipo Anonymous[cite: 5]. |
-| `deface3.html` | Defacement Tipo Satánico[cite: 5]. |
-| `deface4.html` | Defacement Creepy[cite: 5]. |
-| `deface5.html` | Defacement con Efecto Escritura, televisión glitch y letras de fondo[cite: 5]. |
+| `deface1.html` | Defacement con Efecto de Escritura. |
+| `deface2.html` | Defacement Tipo Anonymous. |
+| `deface3.html` | Defacement Tipo Satánico. |
+| `deface4.html` | Defacement Creepy. |
+| `deface5.html` | Defacement con Efecto Escritura, televisión glitch y letras de fondo. |
 
 ## 🚀 Uso y Despliegue
 
@@ -60,4 +60,4 @@ Puedes clonar este repositorio o visualizar los archivos estáticos directamente
 
 ```bash
 # Clona el repositorio
-git clone [https://github.com/realflacodev/Deface-Templates.git](https://github.com/realflacodev/Deface-Templates.git)
+git clone https://github.com/realflacodev/Deface-Templates.git
