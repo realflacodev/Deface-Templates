@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HACKED BY REALFLACODEV</title>
+    <link href="https://fonts.googleapis.com/css2?family=VT323&display=swap" rel="stylesheet">
+    <style>
+        * { box-sizing: border-box; margin: 0; padding: 0; }
+        
+        body { 
+            background-color: #000000; 
+            color: #ffffff;
+            display: flex; 
+            justify-content: center; 
+            align-items: center; 
+            min-height: 100vh; 
+            overflow: hidden;
+            font-family: 'VT323', monospace;
+            position: relative;
+        }
+
+        #tv-static {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            pointer-events: none;
+            z-index: 1;
+            opacity: 0.25;
+        }
+
+        body::after {
+            content: " ";
+            display: block;
+            position: fixed;
+            top: 0; left: 0; bottom: 0; right: 0;
+            background: linear-gradient(rgba(18, 16, 16, 0) 50%, rgba(0, 0, 0, 0.5) 50%);
+            z-index: 2;
+            background-size: 100% 4px;
+            pointer-events: none;
+        }
+
+        .background-matrix {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100vw;
+            height: 100vh;
+            font-size: 1.1rem;
+            line-height: 1.2;
+            color: #ffffff;
+            opacity: 0.12;
+            z-index: 3;
+            overflow: hidden;
+            word-break: break-all;
+            user-select: none;
+            pointer-events: none;
+            padding: 20px;
+            text-transform: uppercase;
+        }
+
+        .card {
+            position: relative;
+            z-index: 10;
+            max-width: 800px;
+            width: 90%;
+            background-color: rgba(0, 0, 0, 0.95);
+            border: 2px solid #ffffff;
+            padding: 40px;
+            box-shadow: 0 0 40px rgba(255, 255, 255, 0.3), inset 0 0 20px rgba(255, 255, 255, 0.1);
+            text-align: center;
+        }
+
+        h1 { 
+            color: #ffffff; 
+            font-size: 3.5rem; 
+            letter-spacing: 4px;
+            text-shadow: 0 0 15px rgba(255, 255, 255, 0.8), 0 0 30px rgba(255, 255, 255, 0.4);
+            margin-bottom: 25px;
+            text-transform: uppercase;
+        }
+
+        .message {
+            font-size: 1.4rem;
+            line-height: 1.7;
+            color: #cccccc;
+            margin-bottom: 25px;
+            letter-spacing: 1px;
+        }
+
+        .message span {
+            color: #ffffff;
+            font-weight: bold;
+            background-color: #222222;
+            padding: 0 5px;
+        }
+
+        .footer-tag {
+            color: #888888;
+            font-size: 1.2rem;
+            letter-spacing: 2px;
+            text-transform: uppercase;
+        }
+
+        .footer-tag span {
+            color: #ffffff;
+        }
+
+        .cursor {
+            display: inline-block;
+            background-color: #ffffff;
+            width: 14px;
+            height: 38px;
+            animation: blink 0.7s infinite;
+            margin-left: 5px;
+            vertical-align: middle;
+            box-shadow: 0 0 10px #ffffff;
+        }
+
+        @keyframes blink {
+            0%, 50% { opacity: 1; }
+            51%, 100% { opacity: 0; }
+        }
+    </style>
+</head>
+<body>
+
+    <canvas id="tv-static"></canvas>
+
+    <div class="background-matrix" id="matrix-bg"></div>
+
+    <div class="card">
+        <h1><span id="typed-text"></span><span class="cursor"></span></h1>
+        
+        <div class="message">
+            Este sitio web fue modificado temporalmente. <span>Protegan a sus usuarios y corrijan sus vulnerabilidades</span> antes de que alguien más explote estos fallos con intenciones destructivas. Ningún sistema es seguro.
+        </div>
+
+        <div class="footer-tag">
+            By &bull; <span>RealFlacoDev</span>
+        </div>
+    </div>
+
+    <script>
+        const bgPhrases = "HACKED BY REALFLACODEV --- NINGUN SISTEMA ES SEGURO --- PROTEGAN A SUS USUARIOS Y A SUS DATOS --- LAS VULNERABILIDADES ESTAN ABIERTAS --- CORRIJAN SUS FALLOS --- EXPECT US --- ";
+        const matrixContainer = document.getElementById("matrix-bg");
+        matrixContainer.textContent = bgPhrases.repeat(250);
+
+        const targetText = "HACKED BY REALFLACODEV";
+        const typedTextElement = document.getElementById("typed-text");
+        const chars = "ABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789@#$%&*/\\<>[]{}~-_";
+        
+        let currentIndex = 0;
+        let shuffleIterations = 0;
+        const maxShuffle = 3;
+
+        function decryptEffect() {
+            if (currentIndex < targetText.length) {
+                let currentString = "";
+                for (let i = 0; i <= currentIndex; i++) {
+                    if (i < currentIndex) {
+                        currentString += targetText[i];
+                    } else {
+                        if (targetText[i] === " ") {
+                            currentString += " ";
+                        } else {
+                            currentString += chars[Math.floor(Math.random() * chars.length)];
+                        }
+                    }
+                }
+                typedTextElement.textContent = currentString;
+                shuffleIterations++;
+
+                if (shuffleIterations > maxShuffle) {
+                    shuffleIterations = 0;
+                    currentIndex++;
+                }
+                setTimeout(decryptEffect, 40);
+            } else {
+                typedTextElement.textContent = targetText;
+            }
+        }
+
+        const canvas = document.getElementById('tv-static');
+        const ctx = canvas.getContext('2d');
+
+        function resizeCanvas() {
+            canvas.width = window.innerWidth;
+            canvas.height = window.innerHeight;
+        }
+
+        window.addEventListener('resize', resizeCanvas);
+        resizeCanvas();
+
+        function drawStatic() {
+            const w = canvas.width;
+            const h = canvas.height;
+            const idata = ctx.createImageData(w, h);
+            const buffer32 = new Uint32Array(idata.data.buffer);
+            
+            for (let i = 0; i < buffer32.length; i++) {
+                if (Math.random() < 0.12) {
+                    const value = Math.random() * 255;
+                    buffer32[i] = (255 << 24) | (value << 16) | (value << 8) | value;
+                }
+            }
+
+            ctx.putImageData(idata, 0, 0);
+            requestAnimationFrame(drawStatic);
+        }
+
+        window.onload = () => {
+            setTimeout(decryptEffect, 300);
+            drawStatic();
+        };
+    </script>
+</body>
+</html>

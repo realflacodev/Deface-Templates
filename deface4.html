@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hacked By RealFlacoDev</title>
+    <link href="https://fonts.googleapis.com/css2?family=Nosifer&family=Special+Elite&display=swap" rel="stylesheet">
+    <style>
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            background-color: #000000;
+            color: #ffffff;
+            font-family: 'Special Elite', monospace;
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            overflow-x: hidden;
+            position: relative;
+            padding: 20px;
+        }
+
+        body::before {
+            content: "";
+            position: fixed;
+            top: 0; left: 0; width: 100%; height: 100%;
+            background: radial-gradient(circle at center, rgba(30, 0, 0, 0.4) 0%, rgba(0, 0, 0, 0.98) 0%);
+            z-index: 1;
+            pointer-events: none;
+        }
+
+        .main-container {
+            position: relative;
+            z-index: 10;
+            width: 100%;
+            max-width: 850px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            text-align: center;
+        }
+
+        .face-header {
+            position: relative;
+            margin-bottom: 20px;
+        }
+
+        .face-header img {
+            width: 240px;
+            height: auto;
+            border-radius: 100%;
+            filter: grayscale(0%) contrast(150%) drop-shadow(0 0 15px rgba(255, 0, 0, 0.4));
+            opacity: 0.85;
+        }
+
+        .hacked-title {
+            font-family: 'Nosifer', cursive;
+            color: #ff0000;
+            font-size: clamp(2rem, 5vw, 3.2rem);
+            letter-spacing: 3px;
+            margin-bottom: 15px;
+            text-shadow: 0 0 15px rgba(255, 0, 0, 0.8), 2px 2px 5px rgba(0, 0, 0, 0.9);
+            text-transform: uppercase;
+        }
+
+        .team-name {
+            font-family: 'Nosifer', cursive;
+            color: #ff2222;
+            font-size: clamp(1.5rem, 3.5vw, 2.5rem);
+            margin-bottom: 10px;
+            letter-spacing: 2px;
+            text-shadow: 0 0 10px rgba(255, 0, 0, 0.6);
+        }
+
+        .sub-tagline {
+            color: #ff6666;
+            font-size: clamp(1rem, 2vw, 1.25rem);
+            margin-bottom: 30px;
+            letter-spacing: 1.5px;
+            text-shadow: 0 0 8px rgba(255, 0, 0, 0.4);
+        }
+
+        .message-content {
+            font-size: clamp(0.95rem, 2vw, 1.15rem);
+            line-height: 1.8;
+            color: #cccccc;
+            max-width: 750px;
+            margin: 0 auto 35px auto;
+            text-align: center;
+            letter-spacing: 0.5px;
+            text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.9);
+            padding: 0 15px;
+        }
+
+        .message-content span {
+            color: #ff3333;
+            font-weight: bold;
+        }
+
+        .credits-box {
+            font-size: 0.9rem;
+            color: #888888;
+            line-height: 1.6;
+            letter-spacing: 1px;
+        }
+
+        .credits-box span {
+            color: #ff0000;
+            font-weight: bold;
+        }
+
+        .credits-box a {
+            color: #cccccc;
+            text-decoration: none;
+            transition: color 0.3s;
+        }
+
+        .credits-box a:hover {
+            color: #ff0000;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="main-container">
+        <div class="face-header">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRgf1h0vUlU769YrqyKBFUFWflhZrRySqbPEfY8ba1J4Mu2IoKb3Zoqgcps&s=10" alt="Dark Security">
+        </div>
+
+        <div class="hacked-title">HACKED</div>
+
+        <div class="team-name">RealFlacoDev</div>
+        
+        <div class="sub-tagline">You are in our shadow, so fix your security!</div>
+
+        <div class="message-content">
+            Este sitio web fue modificado temporalmente con el único propósito de mostrarles que cuenta con vulnerabilidades abiertas. <span>Hicimos esto para que corrijan sus fallos de seguridad y protejan tanto su plataforma como a sus usuarios</span>, antes de que otras personas malintencionadas con peores intenciones descubran la brecha y les causen un daño real
+        </div>
+
+        <div class="credits-box">
+            <p>We are RealFlacoDev Team</p>
+            <p>Contact / Security Blog: <a href="mailto:tu-correo@ejemplo.com">correo@example.com</a></p>
+        </div>
+    </div>
+
+</body>
+</html>

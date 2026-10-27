@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HACKED BY REALFLACODEV</title>
+    <link href="https://fonts.googleapis.com/css2?family=VT323&display=swap" rel="stylesheet">
+    <style>
+        * { box-sizing: border-box; margin: 0; padding: 0; }
+        body { 
+            background-color: #000000; 
+            display: flex; 
+            justify-content: center; 
+            align-items: center; 
+            min-height: 100vh; 
+            overflow: hidden;
+            font-family: 'VT323', monospace;
+        }
+
+        h1 { 
+            color: #ff0000; 
+            font-size: 5rem; 
+            letter-spacing: 4px;
+            text-shadow: 0 0 15px rgba(255, 0, 0, 0.8), 0 0 30px rgba(255, 0, 0, 0.5);
+            text-align: center;
+        }
+
+        .cursor {
+            display: inline-block;
+            background-color: #ff0000;
+            width: 16px;
+            height: 55px;
+            animation: blink 0.7s infinite;
+            margin-left: 5px;
+            vertical-align: middle;
+            box-shadow: 0 0 10px #ff0000;
+        }
+
+        @keyframes blink {
+            0%, 50% { opacity: 1; }
+            51%, 100% { opacity: 0; }
+        }
+    </style>
+</head>
+<body>
+    <h1><span id="typed-text"></span><span class="cursor"></span></h1>
+
+    
+    <script>       // Aqui remplaza "REALFLACODEV" por tu nombre       
+        const targetText = "HACKED BY REALFLACODEV";
+        const typedTextElement = document.getElementById("typed-text");
+        const chars = "ABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789@#$%&*/\\<>[]{}~-_";
+        
+        let currentIndex = 0;
+        let shuffleIterations = 0;
+        const maxShuffle = 4;
+
+        function decryptEffect() {
+            if (currentIndex < targetText.length) {
+                let currentString = "";
+                
+                for (let i = 0; i <= currentIndex; i++) {
+                    if (i < currentIndex) {
+                        currentString += targetText[i];
+                    } else {
+                        if (targetText[i] === " ") {
+                            currentString += " ";
+                        } else {
+                            currentString += chars[Math.floor(Math.random() * chars.length)];
+                        }
+                    }
+                }
+
+                typedTextElement.textContent = currentString;
+                shuffleIterations++;
+
+                if (shuffleIterations > maxShuffle) {
+                    shuffleIterations = 0;
+                    currentIndex++;
+                }
+
+                setTimeout(decryptEffect, 50);
+            } else {
+                typedTextElement.textContent = targetText;
+            }
+        }
+
+        window.onload = () => {
+            setTimeout(decryptEffect, 400);
+        };
+    </script>
+</body>
+</html>

@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hacked By Anonymous</title>
+    <style>
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            background-color: #000000;
+            color: #ffffff;
+            font-family: "Courier New", Courier, monospace;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            min-height: 100vh;
+            padding: 20px;
+            overflow-x: hidden;
+            position: relative;
+        }
+
+        #tv-static {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            pointer-events: none;
+            z-index: 1;
+            opacity: 0.15;
+        }
+
+        body::after {
+            content: " ";
+            display: block;
+            position: fixed;
+            top: 0; left: 0; bottom: 0; right: 0;
+            background: linear-gradient(rgba(18, 16, 16, 0) 50%, rgba(0, 0, 0, 0.3) 50%);
+            z-index: 2;
+            background-size: 100% 4px;
+            pointer-events: none;
+        }
+
+        .container {
+            max-width: 800px;
+            width: 100%;
+            text-align: center;
+            position: relative;
+            z-index: 10;
+        }
+
+        .anonymous-logo {
+            width: 200px;
+            height: auto;
+            margin-bottom: 25px;
+            filter: drop-shadow(0 0 12px rgba(255, 255, 255, 0.5));
+        }
+
+        h1 {
+            color: #ff0000;
+            font-size: 2.8rem;
+            letter-spacing: 4px;
+            margin-bottom: 10px;
+            text-shadow: 0 0 10px rgba(255, 0, 0, 0.6);
+            text-transform: uppercase;
+        }
+
+        .tagline {
+            color: #ffffff;
+            font-size: 1.05rem;
+            margin-bottom: 25px;
+            letter-spacing: 1px;
+        }
+
+        .strike-banner {
+            background-color: #ffffff;
+            color: #000000;
+            font-weight: bold;
+            font-size: 1.15rem;
+            padding: 10px 15px;
+            margin: 0 auto 30px auto;
+            max-width: 700px;
+            letter-spacing: 2px;
+            box-shadow: 0 0 15px rgba(255, 255, 255, 0.8);
+            text-transform: uppercase;
+        }
+
+        .message-text {
+            text-align: center;
+            font-size: 1.15rem;
+            line-height: 1.8;
+            color: #ffffff;
+            margin-bottom: 30px;
+            max-width: 750px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        .message-text span {
+            color: #ff0000;
+            font-weight: bold;
+        }
+
+        .greetings {
+            color: #aaaaaa;
+            font-size: 0.95rem;
+            letter-spacing: 1px;
+            text-transform: uppercase;
+        }
+
+        .greetings span {
+            color: #ffffff;
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+
+    <canvas id="tv-static"></canvas>
+
+    <div class="container">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/a/a6/Anonymous_emblem.svg" alt="Anonymous" class="anonymous-logo">
+
+        <h1>ANONYMOUS</h1>
+        <div class="tagline">We are Legion. We do not Forgive. We do not Forget. Expect Us!</div>
+
+        <div class="strike-banner">
+            #Anonymous #Op #WeAreNotBlackHatHackers
+        </div>
+
+        <div class="message-text">
+            Hola! Queremos aclarar que <span>no somos malos</span>. Hicimos este defacement únicamente para demostrar la falta de seguridad en tu sitio web, si solo lo hubiéramos reportado, probablemente habrías pensado que era una broma o lo habrías ignorado. No hemos borrado ni robado nada, tu información está a salvo. Solo queríamos que tomaras cartas en el asunto para proteger tu sitio web.
+        </div>
+
+        <div class="greetings">
+            Greetings to: <span>RealFlacoDev</span> & All Legion Members
+        </div>
+    </div>
+
+    <script>
+        const canvas = document.getElementById('tv-static');
+        const ctx = canvas.getContext('2d');
+
+        function resizeCanvas() {
+            canvas.width = window.innerWidth;
+            canvas.height = window.innerHeight;
+        }
+
+        window.addEventListener('resize', resizeCanvas);
+        resizeCanvas();
+
+        function drawStatic() {
+            const w = canvas.width;
+            const h = canvas.height;
+            const idata = ctx.createImageData(w, h);
+            const buffer32 = new Uint32Array(idata.data.buffer);
+            
+            for (let i = 0; i < buffer32.length; i++) {
+                if (Math.random() < 0.1) {
+                    const value = Math.random() * 255;
+                    buffer32[i] = (255 << 24) | (value << 16) | (value << 8) | value;
+                }
+            }
+
+            ctx.putImageData(idata, 0, 0);
+            requestAnimationFrame(drawStatic);
+        }
+
+        drawStatic();
+    </script>
+</body>
+</html>
