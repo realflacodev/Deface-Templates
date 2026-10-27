@@ -8,13 +8,13 @@
 
 </div>
 
-> Una colección de plantillas y diseños estéticos de interfaz oscura enfocados en la demostración de vulnerabilidades, auditorías de seguridad defensiva y concientización (White Hat).
+> Colección de plantillas de defacement diseñadas para mostrar cómo luce una intrusión real, orientadas estrictamente a auditorías éticas, pruebas de concepto y concientización sobre seguridad informática.
 
 ---
 
 ## 🎨 Explorar las Plantillas
 
-Transforma la demostración de brechas de seguridad en un ejercicio visual impactante. Este repositorio recopila diseños minimalistas, efectos CRT de televisión, animaciones glitch en JavaScript y mensajes directos orientados a la ciberresponsabilidad.
+Demuestra brechas de seguridad mediante interfaces visuales de alto impacto. Este repositorio recopila diseños minimalistas, efectos CRT de televisión, animaciones glitch en JavaScript y mensajes directos orientados a la ciberresponsabilidad para que los usuarios y administradores reconozcan el alcance de un defacement real.
 
 ## 📋 Tabla de Contenidos
 
@@ -28,11 +28,11 @@ Transforma la demostración de brechas de seguridad en un ejercicio visual impac
 
 ## 📌 Introducción
 
-Esta no es solo una colección de código; es un escaparate artístico de interfaces de auditoría web. Diseñadas bajo una estética "dark", monocromática y de alto impacto visual, estas plantillas sirven como pruebas de concepto (PoC) profesionales para reportes de seguridad y evaluaciones de infraestructura.
+Este repositorio funciona como un escaparate técnico de interfaces utilizadas en auditorías web. El objetivo es mostrar de forma visual cómo se evidencia una vulnerabilidad en un entorno real, permitiendo a equipos de desarrollo y usuarios comprender la importancia de proteger sus plataformas.
 
 ## ⚡ Características
 
-- **Diseño Dark Aesthetic:** Estética hacker clásica en blanco, negro y acentos rojos.
+- **Diseño Dark:** Estética de seguridad ofensiva basada en negro, blanco y acentos rojos.
 - **Efectos Dinámicos:** Scripts de estática de televisión (Canvas), scanlines CRT y decodificación de texto en tiempo real.
 - **Totalmente Responsive:** Adaptable a cualquier resolución de pantalla.
 - **Mensajería Clara:** Enfoque orientado a advertir sobre fallos de seguridad y proteger a los usuarios antes de que actores malintencionados exploten las brechas.
@@ -41,7 +41,7 @@ Esta no es solo una colección de código; es un escaparate artístico de interf
 
 El único propósito de este material es **educativo, demostrativo y de concientización defensiva**. 
 * Ningún sistema es 100% seguro.
-* El objetivo de mostrar estas interfaces en auditorías es incentivar a los administradores a corregir sus fallos a tiempo.
+* Demostrar un defacement real ayuda a ilustrar por qué es indispensable corregir vulnerabilidades a tiempo.
 * Se desaprueba totalmente el uso malintencionado o el acceso no autorizado a sistemas ajenos.
 
 ## 📂 Lista de Templates
